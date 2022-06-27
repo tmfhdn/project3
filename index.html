@@ -1,41 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/aa.css">
-    <link rel="stylesheet" type="text/js" href="js/b.js">
-    <title>Apple</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/aa.css">
+	<link rel="stylesheet" type="text/js" href="js/b.js">
+	<link rel="stylesheet" type="text/js" href="js/a.js">
+	<title>Apple</title>
 
 
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+		var currentScrollTop = 0;
+		$(document).ready(function () {
+			scrollController();
+			$(window).scroll(function () {
+				scrollController();
+			});
+		});
+		function scrollController() {
+			currentScrollTop = $(window).scrollTop();
+			if (currentScrollTop > 100) {
+				$("#nav").addClass("fixed");
+				$("#nav a").addClass("txtCh");
+			} else {
+				$("#nav").removeClass("fixed");
+				$("#nav a").removeClass("txtCh");
+			}
+		}
+
+	</script>
 </head>
 
 <body>
     <div class="container">
-        <div class="item1">
-
-        </div>
 
         <div class="item2">
-            <div><img src="img/q1.png" class="menu3-img" alt="">
-                
-                <ul class="menu3">
-                    <li><a href="#">Mac</a></li>
-                    <li><a href="#">ipad</a></li>
-                    <li><a href="#">iPhone</a></li>
-                    <li><a href="#">Watch</a></li>
-                    <li><a href="#">AirPods</a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
 
 
             <div class="swiper mySwiper">
+				<div id="nav">
+					<div><img src="img/q1.png" class="menu3-img" height="60" alt="">
+			
+						<ul class="menu3">
+							<li><a href="#">Mac</a></li>
+							<li><a href="#">ipad</a></li>
+							<li><a href="#">iPhone</a></li>
+							<li><a href="#">Watch</a></li>
+							<li><a href="#">AirPods</a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</div>
+			
+			
+				</div>
+				
                 <div class="swiper-wrapper">
+					
                     <div class="swiper-slide">
                         <img img src="img/s3.png" class="item2-img" height="600" alt="">
                         <div img src="img/s3.png" class="" alt=""></div>
@@ -57,24 +82,22 @@
         <div class="item3">
             <div class="main">
                 <div class="main4">
-                    <h1 class="main4-text">Aplle</h1>
+                    <h1 class="main4-text">The Man Who Loved Apple</h1>
                     <p>The Apple I was founded in 1976 by Steve Jobs, Steve Wozniak, 
                         and Ronald Wayne under the name Apple Computer Company, 
                         and then Apple II became a big hit and grew rapidly. 
-                        He has since reigned as the No. 1 player in the computer market, 
-                        but after facing a crisis with Apple Lisa, 
-                        he has changed his mind and released Macintosh, 
-                        especially with the rapid development of design software.
+                        He has since reigned as the No. 1 
+
                     </p>
                     <img src="img/z1.png" height="100" alt="">
                 </div>
 
                 <div class="main3">
-                    <img src="img/z.jpg" height="340" alt="">
+                    <img class="main3-img" src="img/z.jpg" height="340" alt="">
                 </div>
 
                 <div class="main2">
-                    <img class="main2-photo" src="img/z3.jpg" height="110" alt="">
+                    <img class="main2-photo" src="img/z3.png" height="150" alt="">
                     <h1 class="main2-text">It's Apple's management philosophy.</h1>
                     <ul class="main2-ul">
                         <p class="main2-p">
@@ -91,12 +114,29 @@
         </div>
 
         <div class="item4">
-            <div class="main-img"></div>
-            <div class="main-img"></div>
-            <div class="main-img"></div>
-            <div class="main-img"></div>
-            <div class="main-img"></div>
-            <div class="main-img"></div>
+            <div class="item4-text">
+                <p>Nature Beauty</p>
+                <h3>STREET SHOT</h3>
+            </div>
+
+            <div class="main-img">
+                <img src="img/x1.png" border="0" style="max-width:100%;height:auto;" />
+            </div>
+            <div class="main-img">
+                <img src="img/x2.jpg" border="0" style="max-width:100%;height:auto;" />
+            </div>
+            <div class="main-img">
+                <img src="img/x3.png" border="0" style="max-width:100%;height:auto;" />
+            </div>
+            <div class="main-img">
+                <img src="img/x4.png" border="0" style="max-width:100%;height:auto;" />
+            </div>
+            <div class="main-img">
+                <img src="img/x5.png" border="0" style="max-width:100%;height:auto;" />
+            </div>
+            <div class="main-img">
+                <img src="img/x6.png" border="0" style="max-width:100%;height:auto;" />
+            </div>
         
         </div>
 
@@ -231,9 +271,6 @@
             </div>
         </div>
     </div>
-
-
-
 
 
 </html>
