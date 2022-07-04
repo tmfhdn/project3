@@ -1,4 +1,23 @@
+/* ----------미디어커리 사이즈---------------- */
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
 
+}
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+  
+}
+@media only screen and (min-width: 576px) and (max-width: 767px)
+{
+
+}
+@media (max-width: 575px)
+{
+  
+}
+
+
+/* -------------밑에 슬라이드------------- */
  nav:first-child {
   display: flex;
   justify-content: center;
@@ -27,6 +46,44 @@ nav a {
   top:0;
   
 }
+/* -------------이미지 효과----------- */
+.item4 img {height: 680px;    background: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 71%,rgba(0,0,0,.03) 72%,rgba(13,13,13,.06) 73%,rgba(13,13,13,.13) 75%,rgba(12,12,12,.23) 78%,rgba(9,9,9,.3) 80%,rgba(11,11,11,.34) 81%,rgba(9,9,9,.41) 83%,rgba(11,11,11,.44) 84%,rgba(9,9,9,.51) 86%,rgba(11,11,11,.55) 87%,rgba(11,11,11,.65) 90%,rgba(9,9,9,.72) 92%,rgba(11,11,11,.76) 93%,rgba(11,11,11,.86) 96%,#0a0a0a 100%);}
+ul,li,ol {list-style:none; margin:0; padding:0;}
+a {text-decoration:none; }
+#contents > div {height: 100vh; padding: 10px;}
+#contents h1 {text-align:center; margin-top: 100px; font-size: 80px; }
+.item4-text{
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+#section1 {background:purple;}
+.s1 {transform: translateX(-100px); transition: all 5s; opacity: 0;}
+
+#section2 {background:tomato;}
+.s2 {transform: translateX(300px); transition: all 2s; opacity: 0;}
+
+#section3 {background:gold;}
+.s3 {transform: translateY(100px); transition: all 3s; opacity: 0;}
+
+#section4 {background:cyan;}
+.s4 {transform: translateY(-100px); transition: all 2s; opacity: 0;}
+
+#section5 {background:yellowgreen;}
+.s5 {transform: translate(-500px,-100px); transition: all 3s; opacity: 0;}
+
+#section6 {background:orange;}
+.s6 {transform: translate(300px,-100px); transition: all 2s; opacity: 0;}
+
+/* .x1-img{transform: translateX(100px); transition: all 5s; opacity: 0;}
+.x2-img{transform: translateX(100px); transition: all 2s; opacity: 0;}
+.x3-img{transform: translateY(100px); transition: all 3s; opacity: 0;}
+.x4-img{transform: translateY(100px); transition: all 2s; opacity: 0;}
+.x5-img{transform: translate(100px,-100px); transition: all 3s; opacity: 0;}
+.x6-img{transform: translate(100px,-100px); transition: all 2s; opacity: 0;} */
 /* -------------이미지 글씨 애니메이션----------------- */
 .item4-text{
   position: absolute;
@@ -631,7 +688,8 @@ li {
   width: 600px;
   height: 383px;
   /* background-color: green; */
-  padding: 0px 0px 0px 132px;
+  padding: 0px 0px 0px 161px;
+  margin-top: -90px;
 }
 
 .main3 {
@@ -655,7 +713,7 @@ li {
 .main-img {
   width: 634px;
   height: 672px;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .main-img2 {

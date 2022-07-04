@@ -93,9 +93,18 @@
 
                     </div>
 
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/hz86m-aZgUU"autoplay=1&mute=1  title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZIolkvxXID8"autoplay=1&mute=1 title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
             
                 </div>
             
@@ -144,27 +153,23 @@
         <div class="item4">
 
             <div class="main-img">
-                <img src="img/x1.png" border="0" style="max-width:100%;height:auto;" />
+                <img src="img/x1.png" class="x1-img" border="0" style="max-width:100%;height:auto;" />
             </div>
             <div class="main-img">
-                <img src="img/x2.jpg" border="0" style="max-width:100%;height:auto;" />
-            </div>
-            <div class="main-img">
-                <img src="img/x3.png" border="0" style="max-width:100%;height:auto;" />
+                <img src="img/x2.jpg" class="x2-img" border="0" style="max-width:100%;height:auto;" />
                 
-                <div class="item4-text">
-                    <p>Nature Beauty</p>
-                    <h3>STREET SHOT</h3>
-                </div>
             </div>
             <div class="main-img">
-                <img src="img/x4.png" border="0" style="max-width:100%;height:auto;" />
+                <img src="img/x3.png" class="x3-img" border="0" style="max-width:100%;height:auto;" />
             </div>
             <div class="main-img">
-                <img src="img/x5.png" border="0" style="max-width:100%;height:auto;" />
+                <img src="img/x4.png" class="x4-img" border="0" style="max-width:100%;height:auto;" />
             </div>
             <div class="main-img">
-                <img src="img/x6.png" border="0" style="max-width:100%;height:auto;" />
+                <img src="img/x5.png" class="x5-img" border="0" style="max-width:100%;height:auto;" />
+            </div>
+            <div class="main-img">
+                <img src="img/x6.png" class="x6-img" border="0" style="max-width:100%;height:auto;" />
             </div>
 
             <div class="item4-text">
@@ -340,7 +345,38 @@
             </div>
         </div>
     </div>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 50,
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                history: {
+                    key: "slide",
+                },
+            });
+    </script>
     
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
 </body>
 
 </html>
