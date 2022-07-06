@@ -2,55 +2,55 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/aa.css">
-	<link rel="stylesheet" type="text/js" href="js/b.js">
-	<link rel="stylesheet" type="text/js" href="js/a.js">
-	<title>Apple</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/aa.css">
+    <link rel="stylesheet" type="text/js" href="js/b.js">
+    <link rel="stylesheet" type="text/js" href="js/a.js">
+    <title>Apple</title>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        var currentScrollTop = 0;
+        $(document).ready(function () {
+            scrollController();
+            $(window).scroll(function () {
+                scrollController();
+            });
+        });
+        function scrollController() {
+            currentScrollTop = $(window).scrollTop();
+            if (currentScrollTop > 100) {
+                $("#nav").addClass("fixed");
+                $("#nav a").addClass("txtCh");
+            } else {
+                $("#nav").removeClass("fixed");
+                $("#nav a").removeClass("txtCh");
+            }
+        }
 
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script>
-		var currentScrollTop = 0;
-		$(document).ready(function () {
-			scrollController();
-			$(window).scroll(function () {
-				scrollController();
-			});
-		});
-		function scrollController() {
-			currentScrollTop = $(window).scrollTop();
-			if (currentScrollTop > 100) {
-				$("#nav").addClass("fixed");
-				$("#nav a").addClass("txtCh");
-			} else {
-				$("#nav").removeClass("fixed");
-				$("#nav a").removeClass("txtCh");
-			}
-		}
-
-	</script>
+    </script>
 </head>
 
 <body>
     <div class="container">
         <div class="item2">
             <div class="swiper mySwiper">
-				<div id="nav">
-					<div><img src="img/q1.png" class="menu3-img" height="60" alt="">
-			
-						<ul class="menu3">
-							<li><a href="#">Mac</a></li>
-							<li><a href="#">ipad</a></li>
-							<li><a href="#">iPhone</a></li>
-							<li><a href="#">Watch</a></li>
-							<li><a href="#">AirPods</a></li>
-							<li><a href="#"></a></li>
-						</ul>
+                <div id="nav">
+                    <div><img src="img/q1.png" class="menu3-img" height="60" alt="">
+
+                        <ul class="menu3">
+                            <li><a href="#">Mac</a></li>
+                            <li><a href="#">ipad</a></li>
+                            <li><a href="#">iPhone</a></li>
+                            <li><a href="#">Watch</a></li>
+                            <li><a href="#">AirPods</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
                         <div class="item11">
 
                             <div class="item11-box">
@@ -75,13 +75,13 @@
                             </div>
 
                         </div>
-					</div>
-			
+                    </div>
 
-				</div>
-				
+
+                </div>
+
                 <div class="swiper-wrapper">
-					
+
                     <div class="swiper-slide">
                         <img img src="img/s3.png" class="item2-img" height="600" alt="">
                         <div img src="img/s3.png" class="" alt=""></div>
@@ -94,20 +94,22 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/hz86m-aZgUU"autoplay=1&mute=1  title="YouTube video player"
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/hz86m-aZgUU"
+                            autoplay=1&mute=1 title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
 
                     </div>
                     <div class="swiper-slide">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZIolkvxXID8"autoplay=1&mute=1 title="YouTube video player"
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZIolkvxXID8"
+                            autoplay=1&mute=1 title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-            
+
                 </div>
-            
+
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
@@ -120,10 +122,10 @@
             <div class="main">
                 <div class="main4">
                     <h1 class="main4-text">The Man Who Loved Apple</h1>
-                    <p>The Apple I was founded in 1976 by Steve Jobs, Steve Wozniak, 
-                        and Ronald Wayne under the name Apple Computer Company, 
-                        and then Apple II became a big hit and grew rapidly. 
-                        He has since reigned as the No. 1 
+                    <p>The Apple I was founded in 1976 by Steve Jobs, Steve Wozniak,
+                        and Ronald Wayne under the name Apple Computer Company,
+                        and then Apple II became a big hit and grew rapidly.
+                        He has since reigned as the No. 1
 
                     </p>
                     <img src="img/z1.png" height="100" alt="">
@@ -138,16 +140,16 @@
                     <h1 class="main2-text">It's Apple's management philosophy.</h1>
                     <ul class="main2-ul">
                         <p class="main2-p">
-                        Management is completely different from the existing order.
-                        Choose a field that you can do well and run with your body.
-                        Always pay attention to new things and don't give up.
-                        Take your technology to the consumer's eye level rather than being overconfident.
-                        Make it simple and simple.</p>
+                            Management is completely different from the existing order.
+                            Choose a field that you can do well and run with your body.
+                            Always pay attention to new things and don't give up.
+                            Take your technology to the consumer's eye level rather than being overconfident.
+                            Make it simple and simple.</p>
                     </ul>
                     <footer></footer>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="item4">
@@ -157,7 +159,7 @@
             </div>
             <div class="main-img">
                 <img src="img/x2.jpg" class="x2-img" border="0" style="max-width:100%;height:auto;" />
-                
+
             </div>
             <div class="main-img">
                 <img src="img/x3.png" class="x3-img" border="0" style="max-width:100%;height:auto;" />
@@ -176,37 +178,41 @@
                 <p>Nature Beauty</p>
                 <h3>STREET SHOT</h3>
             </div>
-        
+
         </div>
         <div class="item5">
             <div class="item5-2">
                 <div class="item5text">
                     <h2 class="item5-text">&nbsp;Apple Content</h2>
-            
-    
+
+
                 </div>
-    
+
                 <div class="phototext">
                     <div class="item5-img1">
                         <img src="img/c1.png" border="0" style="max-width:100%;height:auto;" />
                         <h5>
                             <a href="#">captivated by a new sound.</a>
 
-                            <p>Apple's smart media player, or set-top box. Although it is an Apple TV, a device equipped with a screen has not been released, and it is used by connecting it to a TV or monitor through HDMI.</p>
+                            <p>Apple's smart media player, or set-top box. Although it is an Apple TV, a device equipped
+                                with a screen has not been released, and it is used by connecting it to a TV or monitor
+                                through HDMI.</p>
                         </h5>
                     </div>
                 </div>
-    
+
                 <div class="phototext">
                     <div class="item5-img2">
                         <img src="img/c2.png" border="0" style="max-width:100%;height:auto;" />
                         <h5>
                             <a href="#">Apple Offline Market</a>
-                            <p>The Apple Store is literally something that stands for Apple itself, with more than 500 branches around the world today. This success can only be understood by considering Apple's product strategy together.</p>
+                            <p>The Apple Store is literally something that stands for Apple itself, with more than 500
+                                branches around the world today. This success can only be understood by considering
+                                Apple's product strategy together.</p>
                         </h5>
                     </div>
                 </div>
-    
+
                 <div class="phototext">
                     <div class="item5-img3">
                         <img src="img/c3.png" border="0" style="max-width:100%;height:auto;" />
@@ -222,26 +228,57 @@
         </div>
 
         <div class="item6">
-            <div id="item6-slide">
-        
-                <div class="item6-Photo" style="background: #bdbdbd;">
-                    <img class="item6-porfile" src="img/item6-porfile1.png" alt="">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+    
+                <div id="item6-slide">
+    
+                    <div class="item6-Photo" style="background: #000;">
+                        <img class="item6-porfile" src="img/item6-porfile1.png" alt="">
+                    </div>
+    
+                    <h2>Steve Jobs</h2>
+                    <p>"Sometimes Life is going to hit you in the
+                        head with a brick. Don't lose faith."</p>
+    
                 </div>
-        
-                <h2>Steve Jobs</h2>
-                <p>"Sometimes Life is going to hit you in the
-                    head with a brick. Don't lose faith."</p>
-        
+    
             </div>
-        
-            <div class="item6-slide2">
-                <p></p>
+            <div class="swiper-slide">
+    
+                <div id="item6-slide">
+    
+                    <div class="item6-Photo" style="background: #000;">
+                        <img class="item6-porfile" src="img/item6-porfile2.jpg" alt="">
+                    </div>
+    
+                    <h2>Steve Wozniak</h2>
+                    <p>"My goal wasn't to make a ton of money. It was to build good computers."</p>
+    
+                </div>
+    
             </div>
-        
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        
+            <div class="swiper-slide">
+    
+                <div id="item6-slide">
+    
+                    <div class="item6-Photo" style="background: #000;">
+                        <img class="item6-porfile" src="img/item6-porfile3.png" alt="">
+                    </div>
+    
+                    <h2 class="item6-text">Tim Cook</h2>
+                    <p class="item6-text2">"The early bird is more tired."</p>
+    
+                </div>
+            </div>
+        </div>
+    
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
         </div>
 
         <div class="item7">
@@ -274,9 +311,9 @@
                 <div class="footer-2">
                     <div>
                         <img src="img/q1.png" class="footer2-igm" alt="Nothing" width="180" height="95">
-                        <p>It began in 1976 when Steve Jobs, 
-                        Steve Wozniak, and Ronald Wayne founded the Apple 
-                        Computer Company and built the Apple I in the garage.</p>
+                        <p>It began in 1976 when Steve Jobs,
+                            Steve Wozniak, and Ronald Wayne founded the Apple
+                            Computer Company and built the Apple I in the garage.</p>
 
                         <ul class="footer-icon">
 
@@ -302,42 +339,45 @@
                             </div>
 
                         </ul>
-                            
+
                     </div>
                 </div>
+                
                 <div class="footer-4">
                     <ul class="Navi">
 
-                        <li><h4 class="footer-4text">Navigation<h4>
+                        <li>
+                            <h4 class="footer-4text">Navigation<h4>
 
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">services</a></li>
-                            <li><a href="">blog</a></li>
-                            <li><a href="">Contact</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">services</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">Contact</a></li>
                         </li>
-                            
+
                     </ul>
                 </div>
 
                 <div class="footer-4">
                     <ul class="Navi">
 
-                        <li><h4 class="footer-4text">Contact<h4>
+                        <li>
+                            <h4 class="footer-4text">Contact<h4>
 
-                            <li><a href="">Gojan-dong, Gyeonggi</a></li>
-                            <li><a href="">Real State</a></li>
-                            <li><a href="">whdlswp008@naver.com</a></li>
-                            <li><a href="">+82 010 1234 5678</a></li>
+                        <li><a href="">Gojan-dong, Gyeonggi</a></li>
+                        <li><a href="">Real State</a></li>
+                        <li><a href="">whdlswp008@naver.com</a></li>
+                        <li><a href="">+82 010 1234 5678</a></li>
 
                         </li>
-                            
+
                     </ul>
                 </div>
 
                 <div class="footer-4">
-                   <h4 class="footer-4text">Subscribe Newsletter</h4>
-                   <input type="email" name="EMAIL" id="footer-4-email" placeholder="Enter your email"></input>
+                    <h4 class="footer-4text">Subscribe Newsletter</h4>
+                    <input type="email" name="EMAIL" id="footer-4-email" placeholder="Enter your email"></input>
                     <button type="submit" name="submit" id="footer-4-button" class="footer4-button">Subscribe</button>
                 </div>
 
@@ -347,36 +387,38 @@
     </div>
     <script>
         var swiper = new Swiper(".mySwiper", {
-                spaceBetween: 50,
-                slidesPerView: 1,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                },
-                history: {
-                    key: "slide",
-                },
-            });
+            spaceBetween: 50,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            history: {
+                key: "slide",
+            },
+        });
     </script>
-    
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                loop: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
-        </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            keyboard: {
+                enabled: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
