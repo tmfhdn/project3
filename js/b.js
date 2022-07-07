@@ -1,4 +1,23 @@
-
+ src="https://unpkg.com/swiper/swiper-bundle.min.js"
+ src="http://code.jquery.com/jquery-latest.js"
+ 
+ var currentScrollTop = 0;
+ $(document).ready(function () {
+     scrollController();
+     $(window).scroll(function () {
+         scrollController();
+     });
+ });
+ function scrollController() {
+     currentScrollTop = $(window).scrollTop();
+     if (currentScrollTop > 100) {
+         $("#nav").addClass("fixed");
+         $("#nav a").addClass("txtCh");
+     } else {
+         $("#nav").removeClass("fixed");
+         $("#nav a").removeClass("txtCh");
+     }
+ }
 
 $(function(){
   // 왼쪽에서
