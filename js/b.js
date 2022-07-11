@@ -1,6 +1,55 @@
  src="https://unpkg.com/swiper/swiper-bundle.min.js"
  src="http://code.jquery.com/jquery-latest.js"
  
+ 
+        const getHoverDirection = function (event) {
+            var directions = ['top', 'right', 'bottom', 'left'];
+            var item = event.currentTarget;
+
+            // Width and height of current item
+            var w = item.offsetWidth;
+            var h = item.offsetHeight;
+
+            // Calculate the x/y value of the pointer entering/exiting, relative to the center of the item.
+            // Scale (sort of normalize) the coordinate on smallest side to the scale of the longest.
+            var x = (event.clientX - item.getBoundingClientRect().left - (w / 2)) * (w > h ? (h / w) : 1);
+            var y = (event.clientY - item.getBoundingClientRect().top - (h / 2)) * (h > w ? (w / h) : 1);
+
+            // Calculate the angle to the center the pointer entered/exited
+            // and convert to clockwise format (top/right/bottom/left = 0/1/2/3).
+            var d = Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
+
+            return directions[d];
+        };
+
+        document.addEventListener('DOMContentLoaded', function (event) {
+            // Loop over items (in a IE11 compatible way).
+            var items = document.getElementsByClassName('hover');
+            for (var i = 0; i < items.length; i++) {
+
+                // Loop over the registered event types.
+                ['mouseenter', 'mouseleave'].forEach(function (eventname) {
+                    items[i].addEventListener(eventname, function (event) {
+
+
+                        var dir = getHoverDirection(event);
+
+
+                        event.currentTarget.classList.remove('mouseenter');
+                        event.currentTarget.classList.remove('mouseleave');
+                        event.currentTarget.classList.remove('top');
+                        event.currentTarget.classList.remove('right');
+                        event.currentTarget.classList.remove('bottom');
+                        event.currentTarget.classList.remove('left');
+
+                        event.currentTarget.className += ' ' + event.type + ' ' + dir;
+
+                    }, false);
+                });
+            }
+        });
+        
+// -----------텍스트 이동-------------------------
  var currentScrollTop = 0;
  $(document).ready(function () {
      scrollController();
